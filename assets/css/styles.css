@@ -1,0 +1,105 @@
+:root {
+    --color-text-heading: #080415;
+    --color-test-desc: #51586a;
+    --color-primary: #5d3bee;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", serif;
+}
+
+/* header */
+
+.header {
+    padding-top: 20px;
+}
+.header-container {
+    width: min(100%, 1330px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__main {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    margin-right: 212px;
+}
+
+.logo-image::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px var(--color-primary) solid;
+    opacity: 0.2;
+}
+
+.logo-image::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 10px);
+    content: "hi@arif.interactive";
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 24px;
+}
+
+.logan {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: -21.5px;
+}
+
+.item-nav {
+    display: inline-block;
+    padding-left: 21.5px;
+    padding-right: 21.5px;
+    color: var(--color-test-desc);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item-nav::before {
+    display: inline-block;
+    content: attr(title);
+}
+
+.item-nav:hover {
+    font-weight: bolder;
+}
