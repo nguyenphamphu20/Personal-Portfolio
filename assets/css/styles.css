@@ -28,6 +28,7 @@ body {
     width: 170px;
     height: 62px;
     background-color: var(--color-primary);
+    border: 1px var(--color-primary) solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +39,12 @@ body {
     font-weight: 700;
     line-height: 1.66;
     cursor: pointer;
+    transition: background-color ease 0.3s, color ease 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--color-primary);
 }
 
 /* header */
@@ -123,13 +130,22 @@ body {
     line-height: normal;
 }
 
-.item-nav::before {
+.item-nav  a{
     display: inline-block;
+    text-align: center;
+}
+
+.item-nav a::before {
+    display: block;
     content: attr(title);
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .item-nav:hover {
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 /* hero */
@@ -148,8 +164,11 @@ body {
     height: 705px;
 }
 
-.hero__content {
+.row .hero__content {
     padding-bottom: 43px;
+    margin-left: calc(
+        (100% / var(--column-size)) * var(--offset-number, 1) - var(--spacer)
+    );
 }
 
 .hero__desc {
@@ -198,6 +217,10 @@ body {
 .hero__link-group {
     display: flex;
     gap: 20px;
+}
+
+.hero svg {
+    transition: transform ease 0.3s;
 }
 
 .hero svg:hover {
