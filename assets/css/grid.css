@@ -20,6 +20,11 @@
     margin-right: calc(-1 * var(--spacer) / 2);
 }
 
+.row-initial {
+    margin: initial;
+    flex-wrap: nowrap;
+}
+
 .col {
     flex: 1 0;
     padding-left: calc(var(--spacer) / 2);
