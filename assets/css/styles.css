@@ -55,6 +55,33 @@ body {
     line-height: 1.67;
 }
 
+.title {
+    color: var(--color-text-heading);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -1.28px;
+}
+
+.link {
+    color: var(--color-text-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67; /* 166.667% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    transition: color ease 0.3s;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
 .btn {
     color: #fdfdfd;
     font-size: 1.8rem;
@@ -201,24 +228,6 @@ header {
     align-items: center;
 }
 
-.hero__link {
-    color: var(--color-text-heading);
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 1.67; /* 166.667% */
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
-    transition: color ease 0.3s;
-}
-
-.hero__link:hover {
-    color: var(--color-primary);
-}
-
 .hero__layer-2 {
     position: absolute;
     width: 224px;
@@ -233,7 +242,7 @@ header {
     align-items: center;
 }
 
-.hero__title {
+.hero__subtitle {
     color: var(--color-text-desc);
     font-size: 1.6rem;
     font-style: normal;
@@ -282,6 +291,10 @@ header {
     gap: 12px;
 }
 
+.company__subtitle {
+    font-weight: 600;
+}
+
 /* service */
 
 .service {
@@ -312,14 +325,67 @@ header {
 
 .service__title {
     margin-top: 22px;
-    color: var(--color-text-heading);
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.25; /* 125% */
-    letter-spacing: -1.28px;
 }
 
 .service__subtitle {
     margin-top: 15px;
+}
+
+/* work */
+.work {
+    margin-top: 140px;
+    padding-top: 86px;
+    padding-bottom: 86px;
+    background-color: var(--color-primary);
+}
+
+.work__heading {
+    color: #fff;
+    width: 468px;
+}
+
+.work__desc {
+    color: #fff;
+    width: 370px;
+    margin-left: 28px;
+}
+
+.work__bottom {
+    margin-top: 70px;
+}
+
+.work__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 24px 23px 23px 34px;
+}
+
+.work__subtitle {
+    margin-top: 10px;
+}
+
+.work__link {
+    color: var(--color-text-heading);
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.work__wrap {
+    margin-top: 80px;
+    text-align: center;
+}
+.work__all-project {
+    background-color: #fff;
+    color: var(--color-text-heading)
 }
