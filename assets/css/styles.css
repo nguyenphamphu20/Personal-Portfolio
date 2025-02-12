@@ -387,5 +387,104 @@ header {
 }
 .work__all-project {
     background-color: #fff;
-    color: var(--color-text-heading)
+    color: var(--color-text-heading);
+}
+
+/* statistical */
+.statistical {
+    margin-top: 140px;
+}
+
+.statistical__top {
+    text-align: center;
+}
+
+.statistical__group-statistical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.statistical__greeting {
+    color: var(--color-primary);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.statistical__heading {
+    margin-top: 10px;
+    min-width: 490px;
+}
+
+.statistical__desc {
+    margin: 15px auto 70px;
+    width: 570px;
+}
+
+.statistical__group-statis {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.statistical__group-statis::after,
+.statistical__group-statis::before {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: var(--color-text-heading);
+    opacity: 0.2;
+}
+
+.statistical__group-statis::before {
+    top: 0;
+}
+
+.statistical__group-statis::after {
+    bottom: 0;
+}
+
+.statistical__item-statis > strong {
+    color: var(--color-text-heading);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.35; /* 135.714% */
+    letter-spacing: 1.68px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.statistical__item-desc {
+    width: 160px;
+}
+
+.statistical__item-statis {
+    text-align: left;
+}
+
+.statistical__bottom {
+    margin-top: 70px;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.statistical__video {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
