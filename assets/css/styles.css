@@ -781,7 +781,8 @@ header {
     width: min(100%, 487px);
     transform: translateY(-50%);
     margin-bottom: 11px;
-    transition: transform ease 0.3s, opacity 0.3s ease, visibility 0.3s ease, position 0.3s ease;
+    transition: transform ease 0.3s, opacity 0.3s ease, visibility 0.3s ease,
+        position 0.3s ease;
 }
 
 .faq__control {
@@ -833,4 +834,53 @@ header {
 .faq__control input:checked ~ .faq__btn-control::before {
     content: "-";
     color: var(--color-primary);
+}
+
+/* gallery */
+
+.gallery {
+    margin-top: 160px;
+}
+
+.gallery__top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.gallery__desc {
+    margin: 20px auto 0;
+    width: min(100%, 528px);
+}
+
+.gallery__mail {
+    margin-top: 30px;
+    color: var(--color-primary);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.gallery__bottom {
+    margin-top: 70px;
+}
+
+.gallery__image {
+    height: 529px;
+}
+
+.gallery__img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
