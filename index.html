@@ -77,8 +77,11 @@
                     name="control"
                     hidden
                 />
-                <label for="control__input" class="control__layer"></label>
-                <div class="control__drawer">
+                <label
+                    for="control__input"
+                    class="control__layer hidden-on-pc"
+                ></label>
+                <div class="control__drawer hidden-on-pc">
                     <div class="header-group__logo">
                         <img
                             src="./assets/icon/logo.png"
@@ -95,12 +98,12 @@
                 </div>
             </div>
         </header>
-        <main >
+        <main>
             <!-- hero -->
-            <section class="hero none">
+            <section class="hero">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 g-0">
+                        <div class="col-lg-6 col-12 g-lg-0 order-2">
                             <figure class="hero__image">
                                 <img
                                     src="./assets/images/hero-1.png"
@@ -114,7 +117,7 @@
                                 />
                             </figure>
                         </div>
-                        <div class="col-5 offset-1 g-0">
+                        <div class="col-lg-5 offset-lg-1 col-12 g-0 order-1">
                             <section class="hero__content">
                                 <h1 class="hero__heading heading-lv-1">
                                     A web programmers
@@ -214,7 +217,7 @@
                                 <img
                                     src="./assets/images/layer-hero.png"
                                     alt="background for hero"
-                                    class="hero__layer-2"
+                                    class="hero__layer-2 hidden-on-table-mobile"
                                 />
                             </section>
                         </div>
@@ -445,7 +448,7 @@
                     </section>
                 </div>
             </section>
-            <!-- Work -->
+            <!-- work -->
             <section class="work none">
                 <div class="container">
                     <section class="work__top">

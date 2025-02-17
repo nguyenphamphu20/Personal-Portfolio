@@ -49,6 +49,7 @@
         inset: 0;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+        z-index: 100;
     }
 
     .control__drawer {
@@ -59,6 +60,7 @@
         transform: translateX(100%);
         transition: transform 0.3s ease;
         padding: 20px;
+        z-index: 101;
     }
 
     .control__drawer > .header-group__logo {
@@ -80,6 +82,39 @@
         flex-direction: column;
         align-items: end;
         gap: 10px;
+    }
+
+    .menu__container {
+        border-bottom: 1px solid #d6d3e2;
+    }
+
+    /* hero */
+
+    .hero {
+        padding-top: 50px;
+    }
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .hero__heading {
+        margin-top: 0;
+    }
+
+    .hero-group__cta {
+        margin-top: 30px;
+    }
+
+    .hero-group__follow  {
+        margin-top: 30px;
+    }
+
+    .hero__image {
+        text-align: center;
     }
 }
 

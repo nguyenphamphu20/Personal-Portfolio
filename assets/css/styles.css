@@ -215,7 +215,7 @@ header {
 
 .hero__desc {
     margin-top: 20px;
-    width: 370px;
+    width: max(82%, 370px);
 }
 
 .hero-group__cta {
