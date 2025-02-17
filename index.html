@@ -13,10 +13,21 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
         />
+        <!-- icon -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- grid system -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
     </head>
     <body>
         <!-- header -->
@@ -29,7 +40,7 @@
                             alt="logo"
                             class="menu__logo"
                         />
-                        <span class="menu__title-logo"
+                        <span class="menu__title-logo hidden-on-table-mobile"
                             >nguyenphamphu20@gmail.com</span
                         >
                     </div>
@@ -39,7 +50,7 @@
                     alt="web-icon"
                     class="menu__web-icon"
                 />
-                <nav>
+                <nav class="hidden-on-table-mobile">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#!" title="Projects">Projects</a>
@@ -55,11 +66,38 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- responsive for table and mobile -->
+                <label class="control__menu hidden-on-pc" for="control__input">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input
+                    type="checkbox"
+                    class="control__input"
+                    id="control__input"
+                    name="control"
+                    hidden
+                />
+                <label for="control__input" class="control__layer"></label>
+                <div class="control__drawer">
+                    <div class="header-group__logo">
+                        <img
+                            src="./assets/icon/logo.png"
+                            alt="logo"
+                            class="menu__logo"
+                        />
+                        <span class="menu__title-logo">
+                            nguyenphamphu20@gmail.com
+                        </span>
+                    </div>
+                    <nav>
+                        <ul class="nav__list-mobile"></ul>
+                    </nav>
+                </div>
             </div>
         </header>
-        <main>
+        <main >
             <!-- hero -->
-            <section class="hero">
+            <section class="hero none">
                 <div class="container">
                     <div class="row">
                         <div class="col-6 g-0">
@@ -184,7 +222,7 @@
                 </div>
             </section>
             <!-- company -->
-            <section class="company">
+            <section class="company none">
                 <div class="container">
                     <div class="row">
                         <div class="offset-1 col-3">
@@ -338,7 +376,7 @@
                 </div>
             </section>
             <!-- service -->
-            <section class="service ">
+            <section class="service none">
                 <div class="container">
                     <section class="service__top">
                         <h2 class="service__heading heading-lv-2">
@@ -408,7 +446,7 @@
                 </div>
             </section>
             <!-- Work -->
-            <section class="work ">
+            <section class="work none">
                 <div class="container">
                     <section class="work__top">
                         <div class="row">
@@ -575,7 +613,7 @@
                 </div>
             </section>
             <!-- statistical -->
-            <section class="statistical">
+            <section class="statistical none">
                 <div class="container">
                     <section class="statistical__top">
                         <div class="statistical__group-statistical">
@@ -636,7 +674,7 @@
                 </div>
             </section>
             <!-- feedback -->
-            <section class="feedback">
+            <section class="feedback none">
                 <div class="container">
                     <div class="feedback__main">
                         <h2 class="feedback__heading heading-lv-2">
@@ -838,7 +876,7 @@
                 </figure>
             </section>
             <!-- faq -->
-            <section class="faq">
+            <section class="faq none">
                 <div class="container">
                     <section class="faq__header">
                         <h2 class="faq__heading heading-lv-2">
@@ -983,7 +1021,7 @@
                 </div>
             </section>
             <!-- gallery -->
-            <section class="gallery">
+            <section class="gallery none">
                 <div class="container">
                     <section class="gallery__top">
                         <h2 class="gallery__heading heading-lv-2">
@@ -1030,7 +1068,7 @@
                 </div>
             </section>
             <!-- cta -->
-            <section class="cta">
+            <section class="cta none">
                 <div class="container">
                     <div class="cta__main">
                         <img
@@ -1065,7 +1103,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="none">
             <div class="menu__container">
                 <a href="/">
                     <div class="header-group__logo">
@@ -1112,5 +1150,14 @@
                 </div>
             </div>
         </footer>
+        <script>
+            window.onload = function () {
+                let source = document.querySelector(".nav__list");
+                let target = document.querySelector(".nav__list-mobile");
+                if (source && target) {
+                    target.innerHTML = source.innerHTML;
+                }
+            };
+        </script>
     </body>
 </html>

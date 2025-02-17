@@ -183,6 +183,7 @@ header {
 
 /* hero */
 .hero {
+    overflow: hidden;
     padding-top: 44px;
     background-color: var(--background-color);
 }
