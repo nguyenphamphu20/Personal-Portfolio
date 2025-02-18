@@ -339,7 +339,7 @@ header {
 
 .work__desc {
     color: #fff;
-    width: 370px;
+    width: max(90%, 370px);
     margin-left: 28px;
 }
 
