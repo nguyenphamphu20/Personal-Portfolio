@@ -109,12 +109,37 @@
         margin-top: 30px;
     }
 
-    .hero-group__follow  {
+    .hero-group__follow {
         margin-top: 30px;
     }
 
     .hero__image {
         text-align: center;
+    }
+
+    /* company */
+
+    .company__heading {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .company__heading::before {
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .gap-50 {
+        gap: 50px;
+    }
+    
+    .row-gap-30 {
+        row-gap: 30px;
+    }
+
+    .company__gallery {
+        justify-content: center;
     }
 }
 
