@@ -233,9 +233,9 @@
                                 Meet my recent clients
                             </h2>
                         </div>
-                        <div class="col-lg-8 col-12 ">
+                        <div class="col-lg-8 col-12">
                             <div
-                                class="row row-gap-30 row-cols-lg-4  row-cols-2 align-content__space-between h-100"
+                                class="row row-gap-30 row-cols-lg-4 row-cols-2 align-content__space-between h-100"
                             >
                                 <!-- Google -->
                                 <div class="col">
@@ -379,7 +379,7 @@
                 </div>
             </section>
             <!-- service -->
-            <section class="service none">
+            <section class="service">
                 <div class="container">
                     <section class="service__top">
                         <h2 class="service__heading heading-lv-2">
@@ -393,8 +393,33 @@
                         </p>
                     </section>
                     <section class="service__bottom">
-                        <div class="row">
-                            <div class="col-4">
+                        <!-- control for table and mobile -->
+                        <div class="service__control hidden-on-pc order-2">
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--1"
+                                checked
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--2"
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--3"
+                                hidden
+                            />
+                            <label for="service__features--1" class="service__control-radio"></label>
+                            <label for="service__features--2" class="service__control-radio"></label>
+                            <label for="service__features--3" class="service__control-radio"></label>
+                        </div>
+                        <div class="row order-1">
+                            <div class="col-lg-4 col-12">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/light.png"
@@ -411,7 +436,7 @@
                                     </p>
                                 </article>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-12">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/pencil.png"
@@ -428,7 +453,7 @@
                                     </p>
                                 </article>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-12">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/phone.png"
