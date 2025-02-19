@@ -302,7 +302,7 @@ header {
 
 .service__desc {
     margin: 20px auto 0;
-    width: max(90%, 534px);
+    width: min(90%, 534px);
 }
 
 .service__bottom {
@@ -336,12 +336,12 @@ header {
 
 .work__heading {
     color: #fff;
-    width: 468px;
+    width: min(90%,468px);
 }
 
 .work__desc {
     color: #fff;
-    width: max(90%, 370px);
+    width: min(90%, 370px);
     margin-left: 28px;
 }
 
@@ -422,12 +422,12 @@ header {
 
 .statistical__heading {
     margin-top: 10px;
-    min-width: 490px;
+    width: min(90%,490px);
 }
 
 .statistical__desc {
     margin: 15px auto 70px;
-    width: 570px;
+    width: min(90%,570px);
 }
 
 .statistical__group-statis {
