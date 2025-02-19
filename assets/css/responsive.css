@@ -400,6 +400,12 @@
     .gallery .position-r {
         height: 550px;
     }
+
+    /* cta */
+
+    .cta {
+        margin-top: 120px;
+    }
 }
 
 /* Table */
