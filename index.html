@@ -1058,7 +1058,7 @@
                 </div>
             </section>
             <!-- gallery -->
-            <section class="gallery none">
+            <section class="gallery">
                 <div class="container">
                     <section class="gallery__top">
                         <h2 class="gallery__heading heading-lv-2">
@@ -1072,8 +1072,44 @@
                         <p class="gallery__mail">nguyenphamphu20@gmail.com</p>
                     </section>
                     <section class="gallery__bottom">
-                        <div class="row row-cols-3">
-                            <div class="col">
+                        <!-- control for table and mobile -->
+                        <div class="gallery__control hidden-on-pc order-2">
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--1"
+                                checked
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--2"
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--3"
+                                hidden
+                            />
+                            <label
+                                for="galler__image--1"
+                                class="gallery__control-radio"
+                            ></label>
+                            <label
+                                for="galler__image--2"
+                                class="gallery__control-radio"
+                            ></label>
+                            <label
+                                for="galler__image--3"
+                                class="gallery__control-radio"
+                            ></label>
+                        </div>
+                        <div
+                            class="row row-cols-lg-3 row-cols-1 order-1 position-r"
+                        >
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-01.jpg"
@@ -1082,7 +1118,7 @@
                                     />
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-02.jpg"
@@ -1091,7 +1127,7 @@
                                     />
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-03.jpg"
