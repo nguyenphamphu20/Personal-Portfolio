@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A professional web programmer's portfolio showcasing front-end and back-end development skills.">
+
         <title>Personal-Portfolio</title>
         <!-- reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -13,23 +15,52 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
         />
+        <!-- icon -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <!-- grid system -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
     </head>
     <body>
         <!-- header -->
         <header>
             <div class="menu__container">
-                <a href="/">
+                <a href="/" class="order-2">
                     <div class="header-group__logo">
                         <img
                             src="./assets/icon/logo.png"
                             alt="logo"
                             class="menu__logo"
                         />
-                        <span class="menu__title-logo"
+                        <span class="menu__title-logo hidden-on-table-mobile"
                             >nguyenphamphu20@gmail.com</span
                         >
                     </div>
@@ -39,7 +70,7 @@
                     alt="web-icon"
                     class="menu__web-icon"
                 />
-                <nav>
+                <nav class="hidden-on-table-mobile">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#!" title="Projects">Projects</a>
@@ -55,6 +86,36 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- responsive for table and mobile -->
+                <label class="control__menu hidden-on-pc" for="control__input">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input
+                    type="checkbox"
+                    class="control__input"
+                    id="control__input"
+                    name="control"
+                    hidden
+                />
+                <label
+                    for="control__input"
+                    class="control__layer hidden-on-pc"
+                ></label>
+                <div class="control__drawer hidden-on-pc">
+                    <div class="header-group__logo">
+                        <img
+                            src="./assets/icon/logo.png"
+                            alt="logo"
+                            class="menu__logo"
+                        />
+                        <span class="menu__title-logo hidden-on-mobile">
+                            nguyenphamphu20@gmail.com
+                        </span>
+                    </div>
+                    <nav>
+                        <ul class="nav__list-mobile"></ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
@@ -62,7 +123,7 @@
             <section class="hero">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 g-0">
+                        <div class="col-lg-6 col-12 g-lg-0 order-2">
                             <figure class="hero__image">
                                 <img
                                     src="./assets/images/hero-1.png"
@@ -76,7 +137,7 @@
                                 />
                             </figure>
                         </div>
-                        <div class="col-5 offset-1 g-0">
+                        <div class="col-lg-5 offset-lg-1 col-12 g-0 order-1">
                             <section class="hero__content">
                                 <h1 class="hero__heading heading-lv-1">
                                     A web programmers
@@ -176,7 +237,7 @@
                                 <img
                                     src="./assets/images/layer-hero.png"
                                     alt="background for hero"
-                                    class="hero__layer-2"
+                                    class="hero__layer-2 hidden-on-table-mobile"
                                 />
                             </section>
                         </div>
@@ -186,15 +247,15 @@
             <!-- company -->
             <section class="company">
                 <div class="container">
-                    <div class="row">
-                        <div class="offset-1 col-3">
+                    <div class="row gap-50">
+                        <div class="offset-lg-1 col-lg-3 offset-0 col-12">
                             <h2 class="company__heading heading-lv-2">
                                 Meet my recent clients
                             </h2>
                         </div>
-                        <div class="ml-100 col g-0">
+                        <div class="col-lg-8 col-12">
                             <div
-                                class="row row-cols-4 align-content__space-between h-100"
+                                class="row row-gap-30 row-cols-lg-4 row-cols-2 align-content__space-between h-100"
                             >
                                 <!-- Google -->
                                 <div class="col">
@@ -352,8 +413,42 @@
                         </p>
                     </section>
                     <section class="service__bottom">
-                        <div class="row">
-                            <div class="col-4">
+                        <!-- control for table and mobile -->
+                        <div class="service__control hidden-on-pc order-2">
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--1"
+                                checked
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--2"
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="features-for-service"
+                                id="service__features--3"
+                                hidden
+                            />
+                            <label
+                                for="service__features--1"
+                                class="service__control-radio"
+                            ></label>
+                            <label
+                                for="service__features--2"
+                                class="service__control-radio"
+                            ></label>
+                            <label
+                                for="service__features--3"
+                                class="service__control-radio"
+                            ></label>
+                        </div>
+                        <div class="row order-1 position-r">
+                            <div class="col-lg-4 col-12 position-ab">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/light.png"
@@ -370,7 +465,7 @@
                                     </p>
                                 </article>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-12 position-ab">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/pencil.png"
@@ -387,7 +482,7 @@
                                     </p>
                                 </article>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-12 position-ab">
                                 <article class="service__card">
                                     <img
                                         src="./assets/icon/phone.png"
@@ -399,8 +494,7 @@
                                     </h3>
                                     <p class="service__subtitle desc">
                                         Focuses on automation, CI/CD, server
-                                        management, and efficient web
-                                        application deployment.
+                                        management, and application deployment.
                                     </p>
                                 </article>
                             </div>
@@ -408,18 +502,18 @@
                     </section>
                 </div>
             </section>
-            <!-- Work -->
+            <!-- work -->
             <section class="work">
                 <div class="container">
                     <section class="work__top">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-12">
                                 <h2 class="work__heading heading-lv-2">
                                     Take a look at <br />
                                     my recent projects
                                 </h2>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-12">
                                 <p class="work__desc desc">
                                     The web project provides a modern online
                                     solution, enhancing user experience and
@@ -429,102 +523,141 @@
                         </div>
                     </section>
                     <section class="work__bottom">
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-lg-2 row-cols-1">
+                            <!-- card 1 -->
                             <div class="col">
                                 <article class="work__card">
-                                    <div class="work-group__content">
-                                        <h3 class="work__title title">
-                                            Business website
-                                        </h3>
-                                        <p class="work__subtitle desc">
-                                            The website showcases businesses,
-                                            products, and services, enhancing
-                                            branding and customer reach online.
-                                        </p>
-                                        <a href="#!" class="work__link link"
-                                            >Case Study</a
-                                        >
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="work-group__content">
+                                                <h3 class="work__title title">
+                                                    Business website
+                                                </h3>
+                                                <p class="work__subtitle desc">
+                                                    The website showcases
+                                                    businesses, products, and
+                                                    services, enhancing branding
+                                                    and customer reach online.
+                                                </p>
+                                                <a
+                                                    href="#!"
+                                                    class="work__link link"
+                                                    >Case Study</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <figure class="work__image">
+                                                <img
+                                                    src="./assets/images/work-1.jpg"
+                                                    alt=""
+                                                    class="work__img"
+                                                />
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <figure class="work__image">
-                                        <img
-                                            src="./assets/images/work-1.png"
-                                            alt=""
-                                            class="work__img"
-                                        />
-                                    </figure>
                                 </article>
                             </div>
+                            <!-- card 2 -->
                             <div class="col">
                                 <article class="work__card">
-                                    <div class="work-group__content">
-                                        <h3 class="work__title title">
-                                            Web Application
-                                        </h3>
-                                        <p class="work__subtitle desc">
-                                            Browser-based apps like Google Docs,
-                                            Trello, and Slack enable online work
-                                            and interaction.
-                                        </p>
-                                        <a href="#!" class="work__link link"
-                                            >Case Study</a
-                                        >
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="work-group__content">
+                                                <h3 class="work__title title">
+                                                    Web Application&nbsp;
+                                                </h3>
+                                                <p class="work__subtitle desc">
+                                                    The website showcases
+                                                    businesses, products, and
+                                                    services, boosting branding
+                                                    and customer reach.
+                                                </p>
+                                                <a
+                                                    href="#!"
+                                                    class="work__link link"
+                                                    >Case Study</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <figure class="work__image">
+                                                <img
+                                                    src="./assets/images/work-2.jpg"
+                                                    alt=""
+                                                    class="work__img"
+                                                />
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <figure class="work__image">
-                                        <img
-                                            src="./assets/images/work-2.png"
-                                            alt=""
-                                            class="work__img"
-                                        />
-                                    </figure>
                                 </article>
                             </div>
+                            <!-- card 3 -->
                             <div class="col">
                                 <article class="work__card">
-                                    <div class="work-group__content">
-                                        <h3 class="work__title title">
-                                            E-commerce Website
-                                        </h3>
-                                        <p class="work__subtitle desc">
-                                            Online platforms like Shopee, Tiki,
-                                            Lazada support transactions,
-                                            shopping, payments, and product
-                                            management.
-                                        </p>
-                                        <a href="#!" class="work__link link"
-                                            >Case Study</a
-                                        >
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="work-group__content">
+                                                <h3 class="work__title title">
+                                                    E-commerce Website
+                                                </h3>
+                                                <p class="work__subtitle desc">
+                                                    Online platforms like
+                                                    Shopee, Tiki, and Lazada
+                                                    support shopping, payments,
+                                                    and product management.
+                                                </p>
+                                                <a
+                                                    href="#!"
+                                                    class="work__link link"
+                                                    >Case Study</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <figure class="work__image">
+                                                <img
+                                                    src="./assets/images/work-3.jpg"
+                                                    alt=""
+                                                    class="work__img"
+                                                />
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <figure class="work__image">
-                                        <img
-                                            src="./assets/images/work-3.png"
-                                            alt=""
-                                            class="work__img"
-                                        />
-                                    </figure>
                                 </article>
                             </div>
+                            <!-- card 4 -->
                             <div class="col">
                                 <article class="work__card">
-                                    <div class="work-group__content">
-                                        <h3 class="work__title title">
-                                            Content management system
-                                        </h3>
-                                        <p class="work__subtitle desc">
-                                            Platforms like WordPress and Joomla
-                                            enable easy website content
-                                            management without coding skills.
-                                        </p>
-                                        <a href="#!" class="work__link link"
-                                            >Case Study</a
-                                        >
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="work-group__content">
+                                                <h3 class="work__title title">
+                                                    Content management
+                                                </h3>
+                                                <p class="work__subtitle desc">
+                                                    Platforms like WordPress and
+                                                    Joomla enable easy website
+                                                    content management without
+                                                    coding skills.
+                                                </p>
+                                                <a
+                                                    href="#!"
+                                                    class="work__link link"
+                                                    >Case Study</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <figure class="work__image">
+                                                <img
+                                                    src="./assets/images/work-4.jpg"
+                                                    alt=""
+                                                    class="work__img"
+                                                />
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <figure class="work__image">
-                                        <img
-                                            src="./assets/images/work-4.png"
-                                            alt=""
-                                            class="work__img"
-                                        />
-                                    </figure>
                                 </article>
                             </div>
                         </div>
@@ -560,7 +693,7 @@
                             experience.
                         </p>
                         <div class="row">
-                            <div class="offset-1 col-10">
+                            <div class="offset-lg-1 col-lg-10 col-12 offset-0">
                                 <section class="statistical__group-statis">
                                     <div class="statistical__item-statis">
                                         <strong>08+</strong>
@@ -800,7 +933,7 @@
                 </figure>
             </section>
             <!-- faq -->
-            <section class="faq">
+            <section class="faq ">
                 <div class="container">
                     <section class="faq__header">
                         <h2 class="faq__heading heading-lv-2">
@@ -959,8 +1092,44 @@
                         <p class="gallery__mail">nguyenphamphu20@gmail.com</p>
                     </section>
                     <section class="gallery__bottom">
-                        <div class="row row-cols-3">
-                            <div class="col">
+                        <!-- control for table and mobile -->
+                        <div class="gallery__control hidden-on-pc order-2">
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--1"
+                                checked
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--2"
+                                hidden
+                            />
+                            <input
+                                type="radio"
+                                name="image-for-gallery"
+                                id="galler__image--3"
+                                hidden
+                            />
+                            <label
+                                for="galler__image--1"
+                                class="gallery__control-radio"
+                            ></label>
+                            <label
+                                for="galler__image--2"
+                                class="gallery__control-radio"
+                            ></label>
+                            <label
+                                for="galler__image--3"
+                                class="gallery__control-radio"
+                            ></label>
+                        </div>
+                        <div
+                            class="row row-cols-lg-3 row-cols-1 order-1 position-r"
+                        >
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-01.jpg"
@@ -969,7 +1138,7 @@
                                     />
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-02.jpg"
@@ -978,7 +1147,7 @@
                                     />
                                 </figure>
                             </div>
-                            <div class="col">
+                            <div class="col position-ab">
                                 <figure class="gallery__image">
                                     <img
                                         src="./assets/images/gallery-03.jpg"
@@ -1029,7 +1198,7 @@
         </main>
         <footer>
             <div class="menu__container">
-                <a href="/">
+                <a href="/" class="order-3">
                     <div class="header-group__logo">
                         <img
                             src="./assets/icon/logo.png"
@@ -1044,9 +1213,9 @@
                 <img
                     src="./assets/icon/web-icon.png"
                     alt="web-icon"
-                    class="menu__web-icon"
+                    class="menu__web-icon order-1"
                 />
-                <nav>
+                <nav class="order-2">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#!" title="Projects">Projects</a>
@@ -1063,7 +1232,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="container">
+            <div class="menu__container">
                 <div class="footer__main">
                     <p class="footer__copyright desc">
                         ©nguyenphamphu 2025. All rights reserved.
@@ -1074,5 +1243,14 @@
                 </div>
             </div>
         </footer>
+        <script>
+            window.onload = function () {
+                let source = document.querySelector(".nav__list");
+                let target = document.querySelector(".nav__list-mobile");
+                if (source && target) {
+                    target.innerHTML = source.innerHTML;
+                }
+            };
+        </script>
     </body>
 </html>
