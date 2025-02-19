@@ -7,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -292,6 +293,7 @@ header {
 
 .service {
     margin-top: 133px;
+    overflow: hidden;
 }
 
 .service__top {
@@ -843,6 +845,7 @@ header {
 
 .gallery {
     margin-top: 160px;
+    overflow: hidden;
 }
 
 .gallery__top {
@@ -891,6 +894,11 @@ header {
 /* cta */
 .cta {
     margin-top: 140px;
+    overflow: hidden;
+}
+
+.cta .container {
+    overflow: hidden;
 }
 
 .cta__main {
@@ -899,9 +907,7 @@ header {
     background-color: var(--background-color);
     padding-top: 68px;
     padding-bottom: 68px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     text-align: center;
     overflow: hidden;
 }
@@ -948,14 +954,18 @@ footer {
     margin-top: 50px;
 }
 
-footer > .menu__container {
-    padding-bottom: 32px;
-    border-bottom: 1px solid rgba(12, 7, 32, 0.2);
-}
-
 .footer__main {
-    margin-top: 18px;
+    width: 100%;
+    margin-top: 50px;
     margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer__copyright,
+.security {
+    padding-top: 18px;
+    width: 50%;
+    border-top: 1px solid var(--color-text-desc);
+    text-align: center;
 }

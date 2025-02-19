@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A professional web programmer's portfolio showcasing front-end and back-end development skills.">
+
         <title>Personal-Portfolio</title>
         <!-- reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -22,6 +24,24 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <!-- grid system -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <!-- styles -->
@@ -33,7 +53,7 @@
         <!-- header -->
         <header>
             <div class="menu__container">
-                <a href="/">
+                <a href="/" class="order-2">
                     <div class="header-group__logo">
                         <img
                             src="./assets/icon/logo.png"
@@ -88,7 +108,7 @@
                             alt="logo"
                             class="menu__logo"
                         />
-                        <span class="menu__title-logo">
+                        <span class="menu__title-logo hidden-on-mobile">
                             nguyenphamphu20@gmail.com
                         </span>
                     </div>
@@ -913,7 +933,7 @@
                 </figure>
             </section>
             <!-- faq -->
-            <section class="faq">
+            <section class="faq ">
                 <div class="container">
                     <section class="faq__header">
                         <h2 class="faq__heading heading-lv-2">
@@ -1176,9 +1196,9 @@
                 </div>
             </section>
         </main>
-        <footer class="none">
+        <footer>
             <div class="menu__container">
-                <a href="/">
+                <a href="/" class="order-3">
                     <div class="header-group__logo">
                         <img
                             src="./assets/icon/logo.png"
@@ -1193,9 +1213,9 @@
                 <img
                     src="./assets/icon/web-icon.png"
                     alt="web-icon"
-                    class="menu__web-icon"
+                    class="menu__web-icon order-1"
                 />
-                <nav>
+                <nav class="order-2">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#!" title="Projects">Projects</a>
@@ -1212,7 +1232,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="container">
+            <div class="menu__container">
                 <div class="footer__main">
                     <p class="footer__copyright desc">
                         ©nguyenphamphu 2025. All rights reserved.
